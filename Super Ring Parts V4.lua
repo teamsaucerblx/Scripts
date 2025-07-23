@@ -1,3 +1,6 @@
+--[[ loadstring: loadstring(game:HttpGet("https://raw.githubusercontent.com/teamsaucerblx/Scripts/refs/heads/main/Super%20Ring%20Parts%20V4",true))()
+modified by team sauce ]]--
+
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
