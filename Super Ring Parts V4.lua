@@ -426,21 +426,7 @@ StarterGui:SetCore("SendNotification", {
 
 CoreGui:SetCore("SendNotification", {
 	Title = "More Credits";
-	Text = "";
+	Text = "Also edited by team sauce";
   Icon = content;
 	Duration = 5;
-	Button1 = "Sir Yes Sir";
 	})
-
--- Chat message (Updated for new chat system)
-local function SendChatMessage(message)
-    if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
-        local textChannel = TextChatService.TextChannels.RBXGeneral
-        textChannel:SendAsync(message)
-    else
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
-    end
-end
-
--- Send the chat message
-SendChatMessage("Super Ring Parts V5 By lukas")
