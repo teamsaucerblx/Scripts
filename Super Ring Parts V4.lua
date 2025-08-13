@@ -105,7 +105,7 @@ playSound("2865227271")
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "SuperRingPartsGUI"
 ScreenGui.ResetOnSpawn = false
-ScreenGui.Parent = gethui()
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 local MainFrame = Instance.new("Frame")
 MainFrame.Size = UDim2.new(0, 220, 0, 190)
