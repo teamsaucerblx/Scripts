@@ -1,6 +1,8 @@
---[[ loadstring: loadstring(game:HttpGet("https://raw.githubusercontent.com/teamsaucerblx/Scripts/refs/heads/main/Super%20Ring%20Parts%20V4",true))()
-modified by team sauce ]]--
+--[[ Cracked by team sauce
+now v5!
+]]--
 
+-- Universal Part Claim
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
@@ -105,12 +107,12 @@ playSound("2865227271")
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "SuperRingPartsGUI"
 ScreenGui.ResetOnSpawn = false
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
 
 local MainFrame = Instance.new("Frame")
 MainFrame.Size = UDim2.new(0, 220, 0, 190)
 MainFrame.Position = UDim2.new(0.5, -110, 0.5, -95)
-MainFrame.BackgroundColor3 = Color3.fromRGB(204, 0, 0) -- Light brown
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 102, 51) -- Green
 MainFrame.BorderSizePixel = 0
 MainFrame.Parent = ScreenGui
 
@@ -122,9 +124,9 @@ UICorner.Parent = MainFrame
 local Title = Instance.new("TextLabel")
 Title.Size = UDim2.new(1, 0, 0, 40)
 Title.Position = UDim2.new(0, 0, 0, 0)
-Title.Text = "Super Ring Parts v4"
-Title.TextColor3 = Color3.fromRGB(153, 0, 0) -- Dark brown
-Title.BackgroundColor3 = Color3.fromRGB(255, 51, 51) -- Lighter brown
+Title.Text = "Super Ring Parts v5"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255) -- White
+Title.BackgroundColor3 = Color3.fromRGB(0, 153, 76) -- Little dark green
 Title.Font = Enum.Font.Fondamento -- More elegant font
 Title.TextSize = 22
 Title.Parent = MainFrame
@@ -137,11 +139,11 @@ TitleCorner.Parent = Title
 local ToggleButton = Instance.new("TextButton")
 ToggleButton.Size = UDim2.new(0.8, 0, 0, 35)
 ToggleButton.Position = UDim2.new(0.1, 0, 0.3, 0)
-ToggleButton.Text = "Ring Parts Off"
-ToggleButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255) -- Sienna
-ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255) -- Cornsilk
+ToggleButton.Text = "Off"
+ToggleButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Red
+ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255) -- White
 ToggleButton.Font = Enum.Font.Fondamento
-ToggleButton.TextSize = 18
+ToggleButton.TextSize = 15
 ToggleButton.Parent = MainFrame
 
 -- Round the toggle button
@@ -153,8 +155,8 @@ local DecreaseRadius = Instance.new("TextButton")
 DecreaseRadius.Size = UDim2.new(0.2, 0, 0, 35)
 DecreaseRadius.Position = UDim2.new(0.1, 0, 0.6, 0)
 DecreaseRadius.Text = "<"
-DecreaseRadius.BackgroundColor3 = Color3.fromRGB(255, 153, 153) -- Saddle brown
-DecreaseRadius.TextColor3 = Color3.fromRGB(255, 255, 255) -- Cornsilk
+DecreaseRadius.BackgroundColor3 = Color3.fromRGB(255, 255, 0) -- Yellow
+DecreaseRadius.TextColor3 = Color3.fromRGB(0, 0, 0) -- White
 DecreaseRadius.Font = Enum.Font.Fondamento
 DecreaseRadius.TextSize = 18
 DecreaseRadius.Parent = MainFrame
@@ -168,8 +170,8 @@ local IncreaseRadius = Instance.new("TextButton")
 IncreaseRadius.Size = UDim2.new(0.2, 0, 0, 35)
 IncreaseRadius.Position = UDim2.new(0.7, 0, 0.6, 0)
 IncreaseRadius.Text = ">"
-IncreaseRadius.BackgroundColor3 = Color3.fromRGB(255, 153, 153) -- Saddle brown
-IncreaseRadius.TextColor3 = Color3.fromRGB(255, 255, 255) -- Cornsilk
+IncreaseRadius.BackgroundColor3 = Color3.fromRGB(255, 255, 0) -- Yellow
+IncreaseRadius.TextColor3 = Color3.fromRGB(0, 0, 0) -- White
 IncreaseRadius.Font = Enum.Font.Fondamento
 IncreaseRadius.TextSize = 18
 IncreaseRadius.Parent = MainFrame
@@ -183,10 +185,10 @@ local RadiusDisplay = Instance.new("TextLabel")
 RadiusDisplay.Size = UDim2.new(0.4, 0, 0, 35)
 RadiusDisplay.Position = UDim2.new(0.3, 0, 0.6, 0)
 RadiusDisplay.Text = "Radius: 50"
-RadiusDisplay.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Tan
-RadiusDisplay.TextColor3 = Color3.fromRGB(255, 255, 255) -- Dark brown
+RadiusDisplay.BackgroundColor3 = Color3.fromRGB(255, 255, 0) -- Yellow
+RadiusDisplay.TextColor3 = Color3.fromRGB(0, 0, 0) -- White
 RadiusDisplay.Font = Enum.Font.Fondamento
-RadiusDisplay.TextSize = 18
+RadiusDisplay.TextSize = 15
 RadiusDisplay.Parent = MainFrame
 
 -- Round the radius display
@@ -197,7 +199,7 @@ RadiusCorner.Parent = RadiusDisplay
 local Watermark = Instance.new("TextLabel")
 Watermark.Size = UDim2.new(1, 0, 0, 20)
 Watermark.Position = UDim2.new(0, 0, 1, -20)
-Watermark.Text = "Super Ring [V4] by lukas"
+Watermark.Text = "Super Ring [V5] by lukas!"
 Watermark.TextColor3 = Color3.fromRGB(255, 255, 255) -- Dark brown
 Watermark.BackgroundTransparency = 1
 Watermark.Font = Enum.Font.Fondamento
@@ -209,10 +211,10 @@ local MinimizeButton = Instance.new("TextButton")
 MinimizeButton.Size = UDim2.new(0, 30, 0, 30)
 MinimizeButton.Position = UDim2.new(1, -35, 0, 5)
 MinimizeButton.Text = "-"
-MinimizeButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255) -- Saddle brown
-MinimizeButton.TextColor3 = Color3.fromRGB(255, 255, 255) -- Cornsilk
+MinimizeButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Green
+MinimizeButton.TextColor3 = Color3.fromRGB(255, 255, 255) -- White
 MinimizeButton.Font = Enum.Font.Fondamento
-MinimizeButton.TextSize = 18
+MinimizeButton.TextSize = 15
 MinimizeButton.Parent = MainFrame
 
 -- Round the minimize button
@@ -281,7 +283,7 @@ UserInputService.InputChanged:Connect(function(input)
     end
 end)
 
--- Ring Parts Logic
+-- Ring Parts Claim
 if not getgenv().Network then
     getgenv().Network = {
         BaseParts = {},
@@ -308,9 +310,10 @@ if not getgenv().Network then
     EnablePartControl()
 end
 
+-- Edits
 local radius = 50
 local height = 100
-local rotationSpeed = 1
+local rotationSpeed = 0.5
 local attractionStrength = 1000
 local ringPartsEnabled = false
 
@@ -383,27 +386,61 @@ ToggleButton.MouseButton1Click:Connect(function()
 end)
 
 DecreaseRadius.MouseButton1Click:Connect(function()
-    radius = math.max(1, radius - 2)
+    radius = math.max(0, radius - 5)
     RadiusDisplay.Text = "Radius: " .. radius
     playSound("12221967")
 end)
 
 IncreaseRadius.MouseButton1Click:Connect(function()
-    radius = math.min(100000, radius + 2)
+    radius = math.min(10000, radius + 5)
     RadiusDisplay.Text = "Radius: " .. radius
     playSound("12221967")
 end)
 
 -- Get player thumbnail
-local userId = Players:GetUserIdFromNameAsync("Robloxlukasgames")
+local userId = Players:GetUserIdFromNameAsync("Sito_Vega")
 local thumbType = Enum.ThumbnailType.HeadShot
 local thumbSize = Enum.ThumbnailSize.Size420x420
 local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
 
+StarterGui:SetCore("SendNotification", {
+    Title = "Super ring parts V4",
+    Text = "enjoy",
+    Icon = content,
+    Duration = 5
+})
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Credits",
+    Text = "Original By Yumm Scriptblox",
+    Icon = content,
+    Duration = 5
+})
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Credits",
+    Text = "Edited By lukas",
+    Icon = content,
+    Duration = 5
+})
+
 CoreGui:SetCore("SendNotification", {
-	Title = "Super Ring Parts V4";
-	Text = "Now with no chat message, increased range, and undetected.";
+	Title = "More Credits";
+	Text = "";
   Icon = content;
 	Duration = 5;
 	Button1 = "Sir Yes Sir";
 	})
+
+-- Chat message (Updated for new chat system)
+local function SendChatMessage(message)
+    if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+        local textChannel = TextChatService.TextChannels.RBXGeneral
+        textChannel:SendAsync(message)
+    else
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
+    end
+end
+
+-- Send the chat message
+SendChatMessage("Super Ring Parts V5 By lukas")
