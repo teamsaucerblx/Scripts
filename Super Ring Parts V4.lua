@@ -37,6 +37,7 @@ MainFrame.Position = UDim2.new(0.5, -110, 0.5, -95)
 MainFrame.BackgroundColor3 = Color3.fromRGB(0, 102, 51)
 MainFrame.BorderSizePixel = 0
 MainFrame.Parent = ScreenGui
+MainFrame.Draggable = true
 Instance.new("UICorner", MainFrame).CornerRadius = UDim.new(0, 20)
 
 local Title = Instance.new("TextLabel")
